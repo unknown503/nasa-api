@@ -24,9 +24,9 @@ const weatherData = [
 export const Weather = () => {
 
     return (
-        <div className="flex flex-col justify-center items-center pt-14 pb-8 bg-green1">
+        <div className="flex flex-col justify-center items-center pt-14 pb-4 bg-green1">
             <h1 className="text-5xl font-medium text-purple pb-8">Mars Weather</h1>
-            <div className="flex flex-row">
+            <div className="flex flex-col md:flex-row">
                 {
                     weatherData.map((data, index) => (
                         <div className="flex flex-col" key={index} >
