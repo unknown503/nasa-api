@@ -15,19 +15,4 @@ module.exports = {
       "purple": "#372d54",
     },
   },
-  /* daisyui: {
-     styled: true,
-    themes: [
-      {
-        "mytheme": {
-          "green1": "#66bc9f",
-          "green2": "#54a39b",
-          "green3": "#4e99a4",
-          "blue": "#436788",
-          "purple": "#372d54",
-        },
-      },
-    ],
-  }, */
-  // plugins: [require("daisyui")],
 }
