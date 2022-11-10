@@ -18,16 +18,14 @@ export const Card = ({ data }: ICard) => {
 
     return (
         <div className="mr-6 mb-6">
-            <div className="bg-green3 py-4 px-8 text-white flex flex-col text-center rounded-xl">
+            <div className="bg-green3 py-4 px-8 mb-2 text-white flex flex-col text-center rounded-xl">
                 <span className="text-3xl">Sol {ShowData ? sol : "-"}</span>
                 <span className="text-1xl">{ShowData ? date : "..."}</span>
                 <hr className="my-2" />
                 <span className="text-1xl">High: {ShowData ? high : "-"}</span>
                 <span className="text-1xl">Low: {ShowData ? low : "-"}</span>
             </div>
-            <div className="pt-2">
-                <Button content={`Clima en Marte ${date}`} onClick={() => setShowData(true)} />
-            </div>
+            <Button content={`Clima en Marte ${date}`} onClick={() => setShowData(true)} />
         </div>
     )
 }

@@ -36,11 +36,13 @@ export const Apod = () => {
                         <Spinner />
                     </div>
                     :
-                    <div className="flex flex-col justify-center items-center pt-8 pb-8 bg-[#F4F4F4]">
-                        <h1 className="text-4xl font-semibold text-center text-purple pb-6">{ApodData?.title}</h1>
-                        <div className="flex flex-col">
-                            <img src={ApodData?.image} alt={ApodData?.title} className="max-w-sm rounded-lg shadow-2xl" />
-                            <span className="text-right pt-2 text-purple font-semibold">{DateTime.fromISO(ApodData?.date || "").toLocaleString(DateTime.DATE_FULL)}</span>
+                    <div className="bg-[#F4F4F4]">
+                        <div className="flex flex-col justify-center items-center pt-8 pb-8 container mx-auto">
+                            <h1 className="text-4xl font-semibold text-center text-purple pb-6">{ApodData?.title}</h1>
+                            <div className="flex flex-col">
+                                <img src={ApodData?.image} alt={ApodData?.title} className="max-w-sm rounded-lg shadow-2xl" />
+                                <span className="text-right pt-2 text-purple font-semibold">{DateTime.fromISO(ApodData?.date || "").toLocaleString(DateTime.DATE_FULL)}</span>
+                            </div>
                         </div>
                     </div>
 
